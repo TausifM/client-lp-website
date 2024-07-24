@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- <script type="text/javascript">window.lpTag=window.lpTag||{},'undefined'==typeof window.lpTag._tagCount?(window.lpTag={wl:lpTag.wl||null,scp:lpTag.scp||null,site:'78651712'||'',section:lpTag.section||'',tagletSection:lpTag.tagletSection||null,autoStart:lpTag.autoStart!==!1,ovr:lpTag.ovr||{},_v:'1.10.0',_tagCount:1,protocol:'https:',events:{bind:function(t,e,i){lpTag.defer(function(){lpTag.events.bind(t,e,i)},0)},trigger:function(t,e,i){lpTag.defer(function(){lpTag.events.trigger(t,e,i)},1)}},defer:function(t,e){0===e?(this._defB=this._defB||[],this._defB.push(t)):1===e?(this._defT=this._defT||[],this._defT.push(t)):(this._defL=this._defL||[],this._defL.push(t))},load:function(t,e,i){var n=this;setTimeout(function(){n._load(t,e,i)},0)},_load:function(t,e,i){var n=t;t||(n=this.protocol+'//'+(this.ovr&&this.ovr.domain?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site);var o=document.createElement('script');o.setAttribute('charset',e?e:'UTF-8'),i&&o.setAttribute('id',i),o.setAttribute('src',n),document.getElementsByTagName('head').item(0).appendChild(o)},init:function(){this._timing=this._timing||{},this._timing.start=(new Date).getTime();var t=this;window.attachEvent?window.attachEvent('onload',function(){t._domReady('domReady')}):(window.addEventListener('DOMContentLoaded',function(){t._domReady('contReady')},!1),window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefined'===typeof window._lptStop&&this.load()},start:function(){this.autoStart=!0},_domReady:function(t){this.isDom||(this.isDom=!0,this.events.trigger('LPT','DOM_READY',{t:t})),this._timing[t]=(new Date).getTime()},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):window.lpTag._tagCount+=1;</script> -->
+    <!-- BEGIN LivePerson Monitor. -->
+<script type="text/javascript">window.lpTag=window.lpTag||{},'undefined'==typeof window.lpTag._tagCount?(window.lpTag={wl:lpTag.wl||null,scp:lpTag.scp||null,site:'78651712'||'',section:lpTag.section||'',tagletSection:lpTag.tagletSection||null,autoStart:lpTag.autoStart!==!1,ovr:lpTag.ovr||{},_v:'1.10.0',_tagCount:1,protocol:'https:',events:{bind:function(t,e,i){lpTag.defer(function(){lpTag.events.bind(t,e,i)},0)},trigger:function(t,e,i){lpTag.defer(function(){lpTag.events.trigger(t,e,i)},1)}},defer:function(t,e){0===e?(this._defB=this._defB||[],this._defB.push(t)):1===e?(this._defT=this._defT||[],this._defT.push(t)):(this._defL=this._defL||[],this._defL.push(t))},load:function(t,e,i){var n=this;setTimeout(function(){n._load(t,e,i)},0)},_load:function(t,e,i){var n=t;t||(n=this.protocol+'//'+(this.ovr&&this.ovr.domain?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site);var o=document.createElement('script');o.setAttribute('charset',e?e:'UTF-8'),i&&o.setAttribute('id',i),o.setAttribute('src',n),document.getElementsByTagName('head').item(0).appendChild(o)},init:function(){this._timing=this._timing||{},this._timing.start=(new Date).getTime();var t=this;window.attachEvent?window.attachEvent('onload',function(){t._domReady('domReady')}):(window.addEventListener('DOMContentLoaded',function(){t._domReady('contReady')},!1),window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefined'===typeof window._lptStop&&this.load()},start:function(){this.autoStart=!0},_domReady:function(t){this.isDom||(this.isDom=!0,this.events.trigger('LPT','DOM_READY',{t:t})),this._timing[t]=(new Date).getTime()},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):window.lpTag._tagCount+=1;</script>
+<!-- END LivePerson Monitor. -->
+    <script src="./clientsdk.js"></script>
+    <style>
+        html {
+            height: 100%;
+            min-height: 600px;
+        }
+
+        body.awd {
+            height: 100%;
+            position: relative;
+            background: url('assets/OIP.jfif') no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        #main {
+            padding-top: 1px;
+        }
+
+        #main .ui-dialog {
+            margin-top: 120px;
+            margin-left: auto;
+            margin-right: auto;
+            position: static !important;
+            padding: 0px;
+            background: white;
+            border: none;
+            box-shadow: 0 1px 5px #212121;
+            border-radius: 2px;
+        }
+
+        #main .ui-dialog .ui-dialog-titlebar {
+            height: 0;
+            line-height: 32px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: 0px 0px 0px 18px;
+            border-bottom: solid 1px #ababab;
+            background: #efefef;
+            color: #6c6f70;
+            font-weight: bold;
+            overflow: hidden;
+        }
+
+        #main .ui-dialog .ui-dialog-titlebar span {
+            float: none;
+            margin: 0px;
+        }
+
+        #main .ui-dialog .ui-dialog-titlebar-close {
+            display: none;
+        }
+
+        #main .ui-dialog .ui-dialog-content {
+            padding: 25px;
+        }
+
+        #sign-on {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        #save-new-password {
+            color: #FFFFFF;
+        }
+
+        #cancel-change {
+            float: right;
+        }
+
+        #criteria-container {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #criteria-container li {
+            margin-top: 2px;
+            margin-bottom: 2px;
+            padding-left: 18px;
+            background: url('images/criteria.png') left center no-repeat;
+        }
+
+        #criteria-container li.unsatisfied {
+            background: url('images/unsatisfied.png') left center no-repeat;
+            background-origin: border-box;
+            color: #C62828;
+            font-weight: bold;
+        }
+
+        .unfilled label {
+            color: #C62828;
+            font-weight: bold;
+        }
+
+
+        .error-messages {
+            margin: 0px;
+            padding: 0px;
+            color: #C62828;
+            font-weight: bold;
+        }
+
+        fieldset .field {
+            position: relative;
+            margin-top: 12px;
+        }
+
+
+        .field.field_mb {
+            margin-top: 24px;
+        }
+
+        .awd input,
+        .awd textarea {
+            border: none;
+            border-bottom: 1px solid #9e9e9e;
+            width: 100%;
+            padding: 8px 0px;
+            margin-top: 4px;
+            font-size: 14px;
+        }
+
+        .awd input:focus,
+        .awd textarea:focus,
+        .awd select:focus {
+            border: none;
+            background: none;
+            border-bottom: 1px solid #9e9e9e;
+        }
+
+        .awd input:not([disabled]):hover,
+        .awd textarea:not([disabled]):hover,
+        .awd select:not([disabled]):hover {
+            border: none;
+            border-bottom: 1px solid #9e9e9e;
+        }
+
+        .unfilled input[type="text"],
+        .unfilled input[type="password"] {
+            border: none;
+            border: 1px solid #C62828
+        }
+
+        .unfilled input[type="text"]:hover,
+        .unfilled input[type="password"]:hover {
+            border: none;
+            border: 1px solid #C62828;
+        }
+
+
+        fieldset .field_signon {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+
+<body class="awd">
+
+    <div id="main">
+
+        <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front"
+            aria-describedby="dialog-signon" aria-labelledby="ui-id-1"
+            style="height: auto; width: 300px; position: relative; top: 8.49999px; left: 0px;">
+            <div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix"><span id="ui-id-1"
+                    class="ui-dialog-title">Sign on to AWD</span><button type="button"
+                    class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close"
+                    title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span
+                        class="ui-button-icon-space"> </span>Close</button></div>
+            <div id="dialog-signon" class="ui-dialog-content ui-widget-content"
+                style="width: auto; min-height: 98.4px; max-height: none; height: auto;">
+                <form id="sign-on-form">
+                    <fieldset>
+                        <p id="signon-error-messages" class="error-messages"></p>
+                        <div class="field field_mb c-inputfield" id="userNameDIV">
+                            <label for="user-name" class="c-inputfield__label c-inputfield__label--active">User
+                                Name</label>
+                            <input type="text" id="user-name" name="user-name" title="Enter your user name."
+                                class="c-inputfield__item">
+                        </div>
+                        <div class="field field_mb c-inputfield field--pwd">
+                            <label for="password"
+                                class="c-inputfield__label c-inputfield__label--active">Password</label>
+                            <input type="password" id="password" name="password" title="Enter your password."
+                                class="c-inputfield__item">
+                        </div>
+                        <div class="field field_signon c-inputfield">
+                            <button type="submit" id="sign-on"
+                                class="awd-button c-button c-button--primary disabled">Sign in</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front"
+            aria-describedby="dialog-change-password" aria-labelledby="ui-id-2" style="display: none;">
+            <div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix"><span id="ui-id-2"
+                    class="ui-dialog-title">Change Password</span><button type="button"
+                    class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close"
+                    title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span
+                        class="ui-button-icon-space"> </span>Close</button></div>
+            <div id="dialog-change-password" class="ui-dialog-content ui-widget-content">
+                <p id="change-password-reminder"></p>
+                <p id="change-password-criteria">Your new password must meet the following criteria:</p>
+                <ul id="criteria-container">
+                </ul>
+                <br>
+                <form id="change-password-form">
+                    <fieldset>
+                        <div class="field field_mb c-inputfield" id="oldpasswordDIV">
+                            <label for="old-password" class="c-inputfield__label c-inputfield__label--active">Old
+                                Password</label>
+                            <input type="password" id="old-password" name="old-password"
+                                title="Enter your old password." disabled="" class="c-inputfield__item">
+                            <label id="old-password-error-messages" class="error-messages" for="old-password">Old
+                                Password</label>
+                        </div>
+                        <div class="field field_mb c-inputfield" id="newpasswordDIV">
+                            <label for="new-password" class="c-inputfield__label c-inputfield__label--active">New
+                                Password</label>
+                            <input type="password" id="new-password" name="new-password"
+                                title="Enter your new password." class="c-inputfield__item">
+                        </div>
+                        <div class="field field_mb c-inputfield" id="reptypepasswordDIV">
+                            <label for="retype-new-password"
+                                class="c-inputfield__label c-inputfield__label--active">Retype New Password</label>
+                            <input type="password" id="retype-new-password" name="retype-new-password"
+                                title="Enter your new password again." class="c-inputfield__item">
+                        </div>
+                        <div class="field c-inputfield">
+                            <button type="submit" id="save-new-password"
+                                class="awd-button c-button c-button--primary disabled">Save New Password</button>
+                            <button type="button" id="cancel-change"
+                                class="awd-button c-button c-button--flat">Cancel</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+    <!-- BEGIN LivePerson Monitor. -->
+    <!-- <script
+        type="text/javascript">window.lpTag = window.lpTag || {}, 
+        'undefined' == typeof window.lpTag._tagCount ? (window.lpTag = { wl: lpTag.wl || null, scp: lpTag.scp || null, site: '797179' || '', section: lpTag.section || '', tagletSection: lpTag.tagletSection || null, autoStart: lpTag.autoStart !== !1, ovr: lpTag.ovr || {}, _v: '1.10.0', _tagCount: 1, protocol: 'https:', events: { bind: function (t, e, i) { lpTag.defer(function () { lpTag.events.bind(t, e, i) }, 0) }, trigger: function (t, e, i) { lpTag.defer(function () { lpTag.events.trigger(t, e, i) }, 1) } }, defer: function (t, e) { 0 === e ? (this._defB = this._defB || [], this._defB.push(t)) : 1 === e ? (this._defT = this._defT || [], this._defT.push(t)) : (this._defL = this._defL || [], this._defL.push(t)) }, load: function (t, e, i) { var n = this; setTimeout(function () { n._load(t, e, i) }, 0) }, _load: function (t, e, i) { var n = t; t || (n = this.protocol + '//' + (this.ovr && this.ovr.domain ? this.ovr.domain : 'lptag.liveperson.net') + '/tag/tag.js?site=' + this.site); var o = document.createElement('script'); o.setAttribute('charset', e ? e : 'UTF-8'), i && o.setAttribute('id', i), o.setAttribute('src', n), document.getElementsByTagName('head').item(0).appendChild(o) }, init: function () { this._timing = this._timing || {}, this._timing.start = (new Date).getTime(); var t = this; window.attachEvent ? window.attachEvent('onload', function () { t._domReady('domReady') }) : (window.addEventListener('DOMContentLoaded', function () { t._domReady('contReady') }, !1), window.addEventListener('load', function () { t._domReady('domReady') }, !1)), 'undefined' === typeof window._lptStop && this.load() }, start: function () { this.autoStart = !0 }, _domReady: function (t) { this.isDom || (this.isDom = !0, this.events.trigger('LPT', 'DOM_READY', { t: t })), this._timing[t] = (new Date).getTime() }, vars: lpTag.vars || [], dbs: lpTag.dbs || [], ctn: lpTag.ctn || [], sdes: lpTag.sdes || [], hooks: lpTag.hooks || [], identities: lpTag.identities || [], ev: lpTag.ev || [] }, lpTag.init()) : window.lpTag._tagCount += 1;
+        </script> -->
+    <!-- END LivePerson Monitor. -->
+</html>
